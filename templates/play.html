@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIVS DIVS DIVS</title>
+    <style>
+        /* css style selectors for our page here! */
+        body {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        div {
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            height: 75px;
+            width: 75px;
+            background-color: skyblue;
+            border: 2px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    {% for i in range(0, 3) %}
+        <div>hi</div>
+    {% endfor %}
+</body>
+</html>

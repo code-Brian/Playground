@@ -8,26 +8,41 @@
     <style>
         /* css style selectors for our page here! */
         body {
+            height: 100vh;
+            width: 100vw;
             display: flex;
             justify-content: space-around;
             align-items: center;
+            padding: 2rem;
+        }
+
+        .container {
+            height: 80vh;
+            width: 80vw;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            background-color: whitesmoke;
         }
 
         div {
+            height: 100px;
+            width: 100px;
             display:flex;
             align-items: center;
             justify-content: center;
-            height: 75px;
-            width: 75px;
             background-color: skyblue;
             border: 2px solid black;
             text-align: center;
+            margin: 1rem;
         }
     </style>
 </head>
 <body>
-    {% for i in range(0, 3) %}
-        <div>hi</div>
-    {% endfor %}
+    <div class="container">
+        {% for i in range(0, x) %}
+            <div>hi</div>
+        {% endfor %}
+    </div>
 </body>
 </html>

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DIVS DIVS DIVS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <style>
         /* css style selectors for our page here! */
         body {
@@ -41,7 +42,9 @@
 <body>
     <div class="container">
         {% for i in range(0, num) %}
-            <div style="background-color:{{ color }};">hi</div>
+            <div style="background-color:{{ color }};">
+                <p>hi</p>
+            </div>
         {% endfor %}
     </div>
 </body>
